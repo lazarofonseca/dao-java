@@ -1,3 +1,5 @@
+import java.util.Date;
+
 import model.entity.Department;
 import model.entity.Seller;
 
@@ -8,12 +10,9 @@ public class Application {
 		Department obj = new Department(2, "Coputadores");
 		System.out.println(obj);
 		
-		Seller obj2 = new Seller();
+		Seller obj2 = new Seller(2, "Lázaro", "lazaro@gmail.com", new Date(), 3000.0 , obj);
 		
-		obj2.setId(1);
-		obj2.setName("Lázaro Fonseca");
-		obj2.setEmail("lazaronobreg3@gmail.com");
-		obj2.setBaseSalary(3000.00);
+		
 		
 		System.out.println(obj2);
 		
